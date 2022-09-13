@@ -1,0 +1,376 @@
+:root{
+    --cor-cabecario:#f2fdff;
+    --cor-fundo: white;
+    --fonte-texto:  'Permanent Marker', cursive;
+    --cor-de-fundo: #fbfbea;
+    --cor-da-segunda-parte:#f4efec; 
+    --cor-do-rodape:#0B3954;
+    --fonte-cabecario: 'Lobster', cursive;
+}
+
+.cabecario{
+    display:flex;
+    background:var(--cor-cabecario);
+    justify-content: center;
+    align-items:center;
+    font-family:var(--fonte-cabecario);
+}
+
+.titulo-cabecario{
+    font-family: var(--fonte-cabecario);
+    margin-right:10em;
+    font-size:50px;
+    align-items:center;
+    justify-content: center;
+}
+
+.item-cabecario li{
+    font-family: var(--fonte-cabecario);
+    display:inline-block;
+    font-size:30px;
+    margin: 0.5em;
+}
+
+
+.swiper,.brincadeiras {
+    background: var(--cor-de-fundo);
+}
+
+
+.swiper-slide img{
+    width:100%; 
+
+    
+}
+
+.swiper-button-prev,.swiper-button-next{
+display:none;
+}
+
+.swiper-pagination{
+    position:initial; 
+    margin:1em 0;
+}
+
+
+
+
+.exemplosbrincadeiras{
+    font-family:var(--fonte-texto);
+    text-align:center;
+    font-weight:bold;
+    padding:2em;
+    background:var(--cor-de-fundo);
+    font-size:30px;
+}
+
+.brincadeiras{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:5em;
+    justify-items:center;
+    align-items:center;
+}
+
+
+.lista-brincadeiras > li{
+    padding:0.2em;
+}
+
+
+.primeiroitem{
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:0.5em;
+}
+
+.item::before{
+    content:"🌟";
+    font-size:15px;
+}
+
+.imagembrincadeira{
+    position:relative;
+    width: 80%;
+    text-align:center;
+    justify-content:center;
+    box-shadow: 10px 10px 5px black;
+}
+
+.mapa{
+    text-align:center;
+    background:var(--cor-da-segunda-parte);  
+    padding:0 0 5em; 
+}
+
+.titulolocalizacao{
+    font-family:var(--fonte-cabecario);
+    text-align:center;
+    font-weight:bold;
+    padding:2em;
+    background:linear-gradient(var(--cor-fundo),var(--cor-da-segunda-parte));
+    font-size:30px;
+}
+
+
+
+.rodape{
+    display:flex;
+    justify-content: space-between;
+    background:var(--cor-do-rodape);
+    padding-top:1.5em;
+    padding-bottom: 2em;
+
+}
+
+.titulo-rodape {
+    font-size:30px;
+    font-family:var(--fonte-cabecario);
+    font-weight:bold;
+    color:white;
+    justify-content: center;
+    padding-left:4em;
+    padding-right:0.1em;
+    margin-right:5em;
+}
+
+.contato{
+    display:flex;
+    padding-top:0.25em;
+    padding-left: 7em;
+}
+
+.contato li{
+    padding-right:0.25em;
+}
+
+.linha{
+    display: none;
+}
+
+
+
+.formulario{
+    padding-right:em;  
+}
+
+
+
+.input-padrao{
+    display:block;
+    width:17em;
+    margin: 0.5em 0 20px;
+   
+}
+
+.nomeformulario{
+    color:white;
+    padding-top:2em;
+}
+.titulo-rodapeform{
+    font-size:30px;
+    font-family:var(--fonte-cabecario);
+    font-weight:bold;
+    color:white;
+    justify-content: center;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    padding-bottom:0.5em;
+    text-align:center;
+}
+
+.bordaformulario{
+    display:inline-block;
+    text-align:center;
+    width:20%;  
+    vertical-align:top;
+    margin: 0;
+    padding: 30px 9px;
+    box-sizing: border-box; 
+    border-color:#fffafa; 
+    border-width:2px; 
+    border-style:solid;
+    border-radius:10px;
+    margin-right:9em;
+}
+
+.bordaformulario:hover{
+    background: #274360;
+    width:100%;
+    font-size:1.5em;
+    text-align:center;
+    align-items:center;
+}
+.enviar {
+    width: 100%;
+    margin-right:1em;
+    background:#087E8B;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+
+main{
+    background-color:var(--cor-de-fundo);
+
+}
+
+.atividades{
+    display:grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr;
+    column-gap:0em;
+    padding-top:3em;
+    padding-bottom: 2em;;
+    justify-content: center;
+    text-align:center;
+    margin-left:10em;
+    margin-right:10em;
+    row-gap:2em;
+    column-gap: 2em;
+
+
+}
+
+
+.atividade1, .atividade2,.atividade3,.atividade4,.atividade5,.atividade6,.atividade7{
+        display:inline-block;
+        text-align:center;
+        width:100%;  
+        vertical-align:top;
+        margin: 0;
+        padding: 30px 20px;
+        box-sizing: border-box; 
+        border-color:#000000; 
+        border-width:2px; 
+        border-style:solid;
+        border-radius:10px;
+    }
+
+    .titulo-brincadeiras{
+        font-weight:bold;
+        padding-bottom:1em;
+        font-size:1.5em;
+        font-family:var(--fonte-cabecario);
+        
+
+    }
+
+    .imagematividades{
+        display: relative;
+        width:50%;
+        padding-bottom:1em;
+    }
+
+    .descricao{
+        font-size:1.2em;
+        text-align:center;
+        justify-content: center;
+        font-family:var(--fonte-cabecario);
+    }
+
+    .descricao1{
+        padding-top: 0.6em;
+        font-size:1.2em;
+        text-align:center;
+        justify-content: center;
+    }
+
+    .atividades li:hover{
+        background: var(--cor-da-segunda-parte);
+        border-color:rgb(255, 190, 104);
+    }
+    
+  
+    
+    
+
+@media screen and (max-width:480px){
+    .cabecario{
+        display:flex;
+        flex-direction:column;
+    }
+    .titulo-cabecario{
+        text-align:center;
+        margin-right:0;
+    }
+
+  
+    .brincadeiras{
+        display:flex;
+        flex-direction:column;
+        padding:1em;
+    }
+    
+    .rodape{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+    .titulo-rodape {
+        font-size: 30px;
+        font-family: var(--fonte-cabecario);
+        font-weight: bold;
+        color: white;
+        justify-content: center;
+        margin:auto;
+        padding:0 200px 0 200px;
+    }
+    .contato{
+        padding:0 200px 0 200px;
+        margin:5px;
+    }
+
+    .linha{
+        position:relative;
+        width:400px;
+        height: 150px;
+        padding:0 198x 0 198px;
+        margin:0;
+    }
+    .formulario{
+        padding:0 200px 0 200px;
+    }
+
+    .bordaformulario{
+        padding:0 200px 0 200px;
+    }
+
+    .enviar {
+        width: 94%;
+        padding: 15px 0;
+        margin: 20px;
+        background: #087E8B;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        transition: 1s all;
+        cursor: pointer;
+        text-align: center;
+    }
+    .atividades{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        margin: 0 2em;
+    }
+
+    .descricao {
+            font-size:1em;
+            font-family:var(--fonte-cabecario);
+        }
+
+}
+
+
+  

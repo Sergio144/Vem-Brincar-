@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vem brincar</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@500 & display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="atividades.html">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <section class="cabecario">
+                <h3 class="titulo-cabecario">Vem Brincar</h3>
+                <nav>
+                    <ul class="item-cabecario"> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="atividades.html">Atividades</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section>
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/brincadeira 1.jpg" alt="imagem de um bebê brincando"></div>
+                    <div class="swiper-slide"><img src="img/brincadeira3.jpg" alt="imagem de uma bebê brincando"></div>
+                    <div class="swiper-slide"><img src="img/brincadeira 5.jpg" alt="imagem de uma criança brincando"></div>
+                    <!-- se voce quiser colocar mais foto no carrossel é só repetir o que está em cima e alterar o src-->
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <div class="exemplosbrincadeiras">
+                <h2>Vem brincar aqui!</h2>
+            </div>
+            <section class="brincadeiras">
+                <ul class="lista-brincadeiras">
+                    <li class="primeiroitem">Nossas brincadeiras:</li>
+                    <li class="item">Caça ao tesouro</li>
+                    <li class="item">Contação de histórias</li>
+                    <li class="item">Stop</li>
+                    <li class="item">Massinha caseira</li>
+                    <li class="item">Strike</li>
+                    <li class="item">Cabo de guerra em almofadas</li>
+                    <li class="item">Pista de carrinhos</li>
+                </ul> <img src="img/brincadeira 2.jpg" alt="imagem de jovens brincando" class="imagembrincadeira">
+            </section>
+            <sectiom>
+                <h2 class="titulolocalizacao">Nossa Localização</h2>
+                <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14709.256041595743!2d-43.309812!3d-22.8278692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44b0a3fe7ec83753!2sCantinho%20dos%20Sonhos!5e0!3m2!1spt-BR!2sbr!4v1662487268623!5m2!1spt-BR!2sbr" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </sectiom>
+        </main>
+        <footer>
+            <section class="rodape">
+                <div>
+                    <h3 class="titulo-rodape">Nossos Contatos</h3>
+                    <ul class="contato">
+                        <li><a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="imagem de um icone do facebook"></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="img/instagram.svg" alt="imagem de um icone do instagram"></a></liv>
+                    </ul>
+                </div>
+                <div>
+                    <img src="img/linha rodape.png" class="linha">
+                </div>
+                <div>
+                    <h3 class="titulo-rodapeform">Formulário</h3>
+                    <form class="formulario">
+                        <label for="nomesobrenome" class="nomeformulario">Nome e Sobrenome</label>
+                        <input type ="Nome e Sobrenome" id="nomesobrenome" class="input-padrao" required placeholder="Seu nome"> <!--o campo é obrigatorio por causa do required-->
+                        
+                        <label for="email" class="nomeformulario">Email</label>
+                        <input type="email" id="email" class="input-padrao" required placeholder="Usuario@dominio.com">
+
+                        <label for="telefone" class="nomeformulario">Telefone</label>
+                        <input type="telefone" id="telefone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+                        <input type="submit" value ="Enviar Formulário" class="enviar">
+                    </form>
+                </div>
+                <div class="botao">
+                    
+                </div>
+                </section>   
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script> 
+            const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 2,
+            pagination: {
+             el: '.swiper-pagination',
+              type: 'bullets',
+            },
+            }); 
+        </script>
+    </body>
+</html>
